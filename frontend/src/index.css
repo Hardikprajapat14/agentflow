@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card { @apply rounded-xl border border-slate-200 bg-white shadow-sm; }
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition disabled:cursor-not-allowed disabled:opacity-50; }
+  .btn-primary { @apply btn bg-indigo-600 text-white hover:bg-indigo-700; }
+  .btn-ghost { @apply btn border border-slate-300 bg-white text-slate-700 hover:bg-slate-50; }
+  .btn-danger { @apply btn bg-rose-600 text-white hover:bg-rose-700; }
+  .input { @apply w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200; }
+}
+.prose-report h1 { @apply mb-3 text-2xl font-bold; }
+.prose-report h2 { @apply mb-2 mt-5 text-lg font-semibold text-indigo-900; }
+.prose-report h3 { @apply mb-1 mt-3 font-semibold; }
+.prose-report p { @apply my-2 leading-relaxed; }
+.prose-report ul { @apply my-2 list-disc pl-6; }
+.prose-report ol { @apply my-2 list-decimal pl-6; }
+.prose-report table { @apply my-3 w-full border-collapse text-sm; }
+.prose-report th, .prose-report td { @apply border border-slate-300 px-2 py-1 text-left; }
+.prose-report th { @apply bg-slate-100; }
+.prose-report blockquote { @apply my-2 border-l-4 border-amber-300 bg-amber-50 px-3 py-1 text-sm; }
